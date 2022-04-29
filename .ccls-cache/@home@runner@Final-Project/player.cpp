@@ -165,7 +165,7 @@ void player::get_coin()
   }
 }
 
-int player::random_activities()//วาดลูกเต๋า
+int player::random_activities()
 {
   int random_act,dice,checkdice=1;
   random_act=rdom::random_activities();
