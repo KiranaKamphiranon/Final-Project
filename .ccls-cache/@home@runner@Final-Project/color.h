@@ -26,7 +26,6 @@
 #define MAGB "\e[45m"
 #define CYNB "\e[46m"
 #define WHTB "\e[47m"
-
 //High intensty text
 #define HBLK "\e[0;90m"
 #define HRED "\e[0;91m"
@@ -36,7 +35,6 @@
 #define HMAG "\e[0;95m"
 #define HCYN "\e[0;96m"
 #define HWHT "\e[0;97m"
-
 //Bold high intensity text
 #define BHBLK "\e[1;90m"
 #define BHRED "\e[1;91m"
@@ -46,7 +44,6 @@
 #define BHMAG "\e[1;95m"
 #define BHCYN "\e[1;96m"
 #define BHWHT "\e[1;97m"
-
 //High intensty background 
 #define BLKHB "\e[0;100m"
 #define REDHB "\e[0;101m"

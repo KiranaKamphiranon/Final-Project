@@ -1,8 +1,9 @@
 #include <iostream>
 #include <iomanip>
-using namespace std;
 #include "player.h"
 #include "color.h"
+
+using namespace std;
 
 void showmenubar()
 {
@@ -82,7 +83,7 @@ void player::foodmarket()
         cout<<BLU<<"Choose again -> "<<reset;
         cin>>i;
         cout<<"\033[0;0H\033[2J";
-        cout<<YEL<<"Your coin "<<coin<<" $"<<reset<<endl;
+        cout<<BHYEL<<"Your coin "<<coin<<" $"<<reset<<endl;
         showmenubar();
       }
     }
@@ -152,7 +153,7 @@ void player::get_coin()
 {
   int i;
   i=rdom::getcoin();
-  if(i==3||i==6||i==9)
+  if(i==2||i==4||i==6||i==8)
   {
     coin+=1;
     cout<<BHYEL<<"coin +"<<1<<" $";
@@ -168,8 +169,9 @@ int player::random_activities()//วาดลูกเต๋า
 {
   int random_act,dice,checkdice=1;
   random_act=rdom::random_activities();
-  cout<<BHMAG<<"Random Action: "<<reset;
-  if(random_act==0||random_act==9){
+  cout<<BHMAG<<"Random Activity: "<<reset;
+  if(random_act==0||random_act==9)
+  {
     cout<<BCYN<<"Walk x50 "<<endl;
     random_act=50;
   }
